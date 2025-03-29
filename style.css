@@ -1,20 +1,19 @@
-/* Responsive CSS with Consistency from Start to End */
-
-body {
-    background-color: #121212;
-    color: #FFFFFF;
+body{
+    background-color: #121212; /* Black */
+    color: #FFFFFF; /* White */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
 header {
+            
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1E1E1E;
-    width: 100%;
+    background-color: #1E1E1E; /* Dark Gray */
+    width: 100%;      
+    text-align: center;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
@@ -22,14 +21,15 @@ header {
     position: fixed;
     z-index: 9999;
 }
-
-h1, #hero h2 {
+h1 {
+    margin: 0;
     font-size: 24px;
+}
+#hero h2 {
+    font-size: 40px;
     background: linear-gradient(135deg, #FF9800, #FF5A5F);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
+    -webkit-text-fill-color: transparent;}
 nav ul {
     list-style: none;
     display: flex;
@@ -37,20 +37,23 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
+nav ul li {
+    display: inline;
+}
 nav ul li a {
-    color: #FFC107;
+    color: #FFC107; /* Light Gold */
     text-decoration: none;
     font-size: 15px;
     padding: 10px 20px;
     transition: 0.3s;
 }
-
 nav ul li a:hover {
-    color: #FF5A5F;
+    color: #FF5A5F; /* Fiery Red */
     text-shadow: 0 0 10px #FF5A5F;
 }
-
+.navdiv{
+    
+}
 #hero {
     text-align: center;
     padding: 100px 20px;
@@ -71,24 +74,35 @@ nav ul li a:hover {
     width: auto; /* Maintains aspect ratio */
     border-radius: 50px; /* Softens edges if needed */
 }
-.cta-button, #hero button {
+.cta-button {
     padding: 15px 25px;
     font-size: 18px;
+    border: none;
     border-radius: 8px;
     background: linear-gradient(135deg, #FF9800, #FF5A5F);
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: ;
+    transform: 0.3s; 
     box-shadow: 0 4px 10px rgba(255, 90, 95, 0.4);
 }
-
-.cta-button:hover, #hero button:hover {
+.cta-button:hover {
+    
     transform: scale(1.1);
 }
-
-.section, #services, #contact {
-    padding: 60px 20px;
-    border-radius: 10px;
-    background: rgba(30, 30, 30, 0.9);
+ #hero h2 {
+    font-size: 40px;
+        }
+#hero button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ;
+    transform: 0.3s, 
+}
+#hero button:hover {            
+    transform: scale(1.1);
 }
 .background-img img {
     position: absolute;
@@ -100,30 +114,60 @@ nav ul li a:hover {
     z-index: -1;
     opacity: 5; /* Adjust for better readability */
 }
-.grid, .servicegrid, .saygrid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    background: rgba(30, 30, 30, 0.9);}
+#services {
+        position: relative;
+        text-align: center;
+        padding: 80px 20px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        padding: 20px;
+    }
+    .servicegrid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 25px;
+        width: 95%;
 
-.item, .clients {
-    background: #1E1E1E;
-    padding: 10px;
-    border-radius: 15px;
-    transition: transform 0.3s;
-}
+    }
+    .saygrid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+        text-decoration: none;
+    }
+    .item {
+        background: #1E1E1E;
+        padding: 10px;
+        border-radius: 15px;
+        width: 30%;
+        color: #FFC107; /* Light Gold */
+        transition: transform 0.3s, box-shadow 0.3s;
+        justify-items: center;
+        text-decoration: none;
+    }
 
-.item:hover, .clients:hover {
-    transform: scale(1.05);
-}
-
-.clients img {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-}
- #contact {
+    .item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(255, 90, 95, 0.5);
+    }
+    /* Contact Section */
+    #contact {
         text-align: center;
         padding: 80px 20px;
         margin: 40px auto;
@@ -220,13 +264,13 @@ transition: transform 0.3s ease; /* Adds a hover effect */
 transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/*.clients img {
-width: 80px;  
+.clients img {
+width: 80px; /* Consistent size */
 height: 80px;
 border: 5px solid black;
-border-radius: 100%;   
+border-radius: 100%; /* Circular image */
 object-fit: cover;
-}*/
+}
 
 .client-text {
 display: flex;
@@ -255,18 +299,21 @@ footer {
     text-align: center;
     padding: 20px;
 }
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
 @media (max-width: 480px) {
-    body, header { font-size: 12px; padding: 10px; }
-    nav ul { flex-direction: column; gap: 10px; }
-}
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 10px;
+    }
 
 @media (max-width: 768px) {
-    body, header { font-size: 14px; padding: 15px; }
-    nav ul { flex-direction: row; gap: 15px; }
-}
+    body {
+        font-size: 14px;
+    }
