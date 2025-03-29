@@ -1,19 +1,20 @@
-body{
-    background-color: #121212; /* Black */
-    color: #FFFFFF; /* White */
+/* Responsive CSS with Consistency from Start to End */
+
+body {
+    background-color: #121212;
+    color: #FFFFFF;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+
 header {
-            
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1E1E1E; /* Dark Gray */
-    width: 100%;      
-    text-align: center;
+    background-color: #1E1E1E;
+    width: 100%;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
@@ -21,15 +22,14 @@ header {
     position: fixed;
     z-index: 9999;
 }
-h1 {
-    margin: 0;
+
+h1, #hero h2 {
     font-size: 24px;
-}
-#hero h2 {
-    font-size: 40px;
     background: linear-gradient(135deg, #FF9800, #FF5A5F);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
+    -webkit-text-fill-color: transparent;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -37,287 +37,87 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-nav ul li {
-    display: inline;
-}
+
 nav ul li a {
-    color: #FFC107; /* Light Gold */
+    color: #FFC107;
     text-decoration: none;
     font-size: 15px;
     padding: 10px 20px;
     transition: 0.3s;
 }
+
 nav ul li a:hover {
-    color: #FF5A5F; /* Fiery Red */
+    color: #FF5A5F;
     text-shadow: 0 0 10px #FF5A5F;
 }
-.navdiv{
-    
-}
+
 #hero {
     text-align: center;
     padding: 100px 20px;
     background: url('images/background2.png') no-repeat center center/cover;
     animation: fadeIn 2s ease-in-out;
 }
-.brand-title {
-    display: flex;
-    align-items: center; /* Aligns text and logo */
-    gap: 15px; /* Adds space between logo and text */
-    font-size: 20px; /* Makes the heading stand out */
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif; /* Modern font */
-}
 
-.brand-title img {
-    height: 35px; /* Slightly larger for visibility */
-    width: auto; /* Maintains aspect ratio */
-    border-radius: 50px; /* Softens edges if needed */
-}
-.cta-button {
+.cta-button, #hero button {
     padding: 15px 25px;
     font-size: 18px;
-    border: none;
     border-radius: 8px;
     background: linear-gradient(135deg, #FF9800, #FF5A5F);
     cursor: pointer;
-    transition: ;
-    transform: 0.3s; 
+    transition: transform 0.3s;
     box-shadow: 0 4px 10px rgba(255, 90, 95, 0.4);
 }
-.cta-button:hover {
-    
+
+.cta-button:hover, #hero button:hover {
     transform: scale(1.1);
 }
- #hero h2 {
-    font-size: 40px;
-        }
-#hero button {
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: ;
-    transform: 0.3s, 
-}
-#hero button:hover {            
-    transform: scale(1.1);
-}
-.background-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 5; /* Adjust for better readability */
-}
-.section {
+
+.section, #services, #contact {
     padding: 60px 20px;
-    text-align: center;
-    margin: 20px;
     border-radius: 10px;
-    background: rgba(30, 30, 30, 0.9);}
-#services {
-        position: relative;
-        text-align: center;
-        padding: 80px 20px;
-        overflow: hidden;
-        border-radius: 10px;
-    }
-    .grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 25px;
-        justify-content: center;
-        padding: 20px;
-    }
-    .servicegrid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        padding: 25px;
-        width: 95%;
-
-    }
-    .saygrid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        padding: 20px;
-        text-decoration: none;
-    }
-    .item {
-        background: #1E1E1E;
-        padding: 10px;
-        border-radius: 15px;
-        width: 30%;
-        color: #FFC107; /* Light Gold */
-        transition: transform 0.3s, box-shadow 0.3s;
-        justify-items: center;
-        text-decoration: none;
-    }
-
-    .item:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 15px rgba(255, 90, 95, 0.5);
-    }
-    /* Contact Section */
-    #contact {
-        text-align: center;
-        padding: 80px 20px;
-        margin: 40px auto;
-        border-radius: 10px;
-        width: 80%;
-    }
-    #contact h2 {
-        font-size: 36px;
-        margin-bottom: 20px;
-        
-    }
-    .contact-info {
-        margin-top: 20px;
-        font-size: 20px;
-    }
-    .contact-links {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        flex-wrap: wrap;
-    }
-
-    .contact-links a {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        font-size: 22px;
-        padding: 10px 20px;
-        border-radius: 8px;
-        background: linear-gradient(135deg, #FF9800, #FF5A5F);
-        color: white;
-        transition: 0.3 ease;
-    }
-    
-    .contact-links a img {
-        width: 35px;
-        height: 35px;
-        margin-right: 10px;
-    }
-    .contact-links a:hover {
-        background: #FFC107;
-        transform: scale(1.1);
-    }
-    .whatsapp-cta {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        font-size: 18px;
-        padding: 12px 20px;
-        border-radius: 8px;
-    }
-    .whatsapp-cta img {
-        width: 25px;
-        margin-right: 10px;
-    }
-    .whatsapp-cta:hover {
-        
-        transform: scale(1.1);
-    }
-    /* Sticky CTA Button */
-    .sticky-cta {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: linear-gradient(135deg, #FF9800, #FF5A5F);
-        color: white;
-        padding: 15px 20px;
-        font-size: 16px;
-        text-decoration: none;
-        border-radius: 50px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease-in-out;
-        z-index: 9999;
-        
-    }
-
-    .sticky-cta:hover {
-        background: #FFC107;
-        transform: scale(1.05);
-    }
-    .clients {
-display: flex; /* Aligns image and text in a row */
-align-items: center; /* Centers content vertically */
-gap: 15px; /* Space between image and text */
-padding: 15px; /* More spacing for a clean look */
-border: 2px solid #000; /* Border for a structured design */
-border-radius: 20px; /* Rounded corners */
-background: linear-gradient(135deg, #FF9800, #FF5A5F);
-width: 28%; /* Ensures proper wrapping */
-transition: transform 0.3s ease; /* Adds a hover effect */
+    background: rgba(30, 30, 30, 0.9);
 }
 
-.clients:hover {
-transform: scale(1.05); /* Slight zoom on hover */
+.grid, .servicegrid, .saygrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item, .clients {
+    background: #1E1E1E;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.item:hover, .clients:hover {
+    transform: scale(1.05);
 }
 
 .clients img {
-width: 80px; /* Consistent size */
-height: 80px;
-border: 5px solid black;
-border-radius: 100%; /* Circular image */
-object-fit: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
 }
 
-.client-text {
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-
-.clients a {
-text-decoration: none; /* Removes underline */
-color: #000; /* Black text */
-font-family: Arial, sans-serif; /* Clean font */
-}
-
-.name {
-font-weight: bold;
-font-size: 18px;
-display: block;
-color: #fff;
-}
-
-.followers {
-font-size: 14px;
-color: #f1f1f1;
-}
 footer {
     text-align: center;
     padding: 20px;
 }
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
 @media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-
-    header {
-        padding: 10px;
-    }
+    body, header { font-size: 12px; padding: 10px; }
+    nav ul { flex-direction: column; gap: 10px; }
+}
 
 @media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    header {
-        padding: 15px;
-    }
+    body, header { font-size: 14px; padding: 15px; }
+    nav ul { flex-direction: row; gap: 15px; }
+}
