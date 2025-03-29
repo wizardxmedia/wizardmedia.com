@@ -303,17 +303,3 @@ footer {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-
-    header {
-        padding: 10px;
-    }
-
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
